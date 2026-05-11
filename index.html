@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaied Fitness - Professional Fitness Coaching</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="no-js">
+    <!-- Glassmorphic Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>ZAIED FITNESS</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#transformations" class="nav-link">Transformations</a></li>
+                <li><a href="#results" class="nav-link">Results</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title fade-in">ZAIED FITNESS</h1>
+            <p class="hero-subtitle fade-in">Transform Your Body, Transform Your Life</p>
+            <div class="hero-stats fade-in">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="500">0</span>
+                    <span class="stat-label">+ Clients</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="5">0</span>
+                    <span class="stat-label">+ Years Experience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="95">0</span>
+                    <span class="stat-label">% Success Rate</span>
+                </div>
+            </div>
+            <a href="#contact" class="cta-button fade-in">Start Your Journey</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title reveal">Services</h2>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Personal Training</h3>
+                    <p>One-on-one customized workout plans tailored to your specific goals and fitness level.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Nutrition Coaching</h3>
+                    <p>Personalized meal plans and nutritional guidance to fuel your fitness journey.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Goal Setting</h3>
+                    <p>Strategic planning and milestone tracking to ensure you reach your fitness objectives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before & After Section -->
+    <section id="transformations" class="transformations">
+        <div class="container">
+            <h2 class="section-title reveal">Success Stories</h2>
+            <p class="section-subtitle reveal">Real transformations, real results</p>
+            
+            <div class="slider-container reveal">
+                <div class="slider-wrapper">
+                    <button class="slider-btn prev-btn" id="prevBtn" aria-label="Previous slide">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    
+                    <div class="slider" id="transformationSlider">
+                        <!-- Slide 1 -->
+                        <div class="slide">
+                            <div class="transformation-card">
+                                <div class="client-header">
+                                    <div class="client-info">
+                                        <h3>Ahmed Mahmoud</h3>
+                                        <p class="client-age">28 years old</p>
+                                        <div class="client-stats">
+                                            <span class="stat">-17 kg</span>
+                                            <span class="stat">12 weeks</span>
+                                        </div>
+                                    </div>
+                                    <div class="achievement-badge">
+                                        <i class="fas fa-trophy"></i>
+                                        <span>Champion</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="before-after-slider">
+                                    <div class="comparison-container">
+                                        <div class="image-comparison">
+                                            <img src="https://picsum.photos/seed/ahmed-before/400/500.jpg" alt="Before Ahmed" class="before-img">
+                                            <div class="image-overlay before-overlay">
+                                                <span class="overlay-label">Before</span>
+                                                <span class="weight">95 kg</span>
+                                            </div>
+                                        </div>
+                                        <div class="arrow-separator">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </div>
+                                        <div class="image-comparison">
+                                            <img src="https://picsum.photos/seed/ahmed-after/400/500.jpg" alt="After Ahmed" class="after-img">
+                                            <div class="image-overlay after-overlay">
+                                                <span class="overlay-label">After</span>
+                                                <span class="weight">78 kg</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="client-testimonial">
+                                    <p>"Working with Zaied completely transformed my life. I lost 17kg and gained confidence I never thought possible. The personalized nutrition and training plan was exactly what I needed!"</p>
+                                    <div class="client-goals">
+                                        <span class="goal-tag">Weight Loss</span>
+                                        <span class="goal-tag">Muscle Building</span>
+                                        <span class="goal-tag">Endurance</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 2 -->
+                        <div class="slide">
+                            <div class="transformation-card">
+                                <div class="client-header">
+                                    <div class="client-info">
+                                        <h3>Sarah Khalid</h3>
+                                        <p class="client-age">32 years old</p>
+                                        <div class="client-stats">
+                                            <span class="stat">-10 kg</span>
+                                            <span class="stat">16 weeks</span>
+                                        </div>
+                                    </div>
+                                    <div class="achievement-badge">
+                                        <i class="fas fa-star"></i>
+                                        <span>Star</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="before-after-slider">
+                                    <div class="comparison-container">
+                                        <div class="image-comparison">
+                                            <img src="https://picsum.photos/seed/sarah-before/400/500.jpg" alt="Before Sarah" class="before-img">
+                                            <div class="image-overlay before-overlay">
+                                                <span class="overlay-label">Before</span>
+                                                <span class="weight">72 kg</span>
+                                            </div>
+                                        </div>
+                                        <div class="arrow-separator">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </div>
+                                        <div class="image-comparison">
+                                            <img src="https://picsum.photos/seed/sarah-after/400/500.jpg" alt="After Sarah" class="after-img">
+                                            <div class="image-overlay after-overlay">
+                                                <span class="overlay-label">After</span>
+                                                <span class="weight">62 kg</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="client-testimonial">
+                                    <p>"After having two kids, I thought I'd never get my pre-baby body back. Zaied's postpartum fitness program helped me lose 10kg and feel stronger than ever!"</p>
+                                    <div class="client-goals">
+                                        <span class="goal-tag">Postpartum</span>
+                                        <span class="goal-tag">Toning</span>
+                                        <span class="goal-tag">Core Strength</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 3 -->
+                        <div class="slide">
+                            <div class="transformation-card">
+                                <div class="client-header">
+                                    <div class="client-info">
+                                        <h3>Mohamed Rami</h3>
+                                        <p class="client-age">35 years old</p>
+                                        <div class="client-stats">
+                                            <span class="stat">-18 kg</span>
+                                            <span class="stat">20 weeks</span>
+                                        </div>
+                                    </div>
+                                    <div class="achievement-badge">
+                                        <i class="fas fa-award"></i>
+                                        <span>Achiever</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="before-after-slider">
+                                    <div class="comparison-container">
+                                        <div class="image-comparison">
+                                            <img src="https://picsum.photos/seed/mohamed-before/400/500.jpg" alt="Before Mohamed" class="before-img">
+                                            <div class="image-overlay before-overlay">
+                                                <span class="overlay-label">Before</span>
+                                                <span class="weight">110 kg</span>
+                                            </div>
+                                        </div>
+                                        <div class="arrow-separator">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </div>
+                                        <div class="image-comparison">
+                                            <img src="https://picsum.photos/seed/mohamed-after/400/500.jpg" alt="After Mohamed" class="after-img">
+                                            <div class="image-overlay after-overlay">
+                                                <span class="overlay-label">After</span>
+                                                <span class="weight">92 kg</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="client-testimonial">
+                                    <p>"As a busy professional, I struggled with weight gain for years. Zaied created a flexible program that fit my schedule. 18kg down and counting!"</p>
+                                    <div class="client-goals">
+                                        <span class="goal-tag">Weight Loss</span>
+                                        <span class="goal-tag">Busy Professional</span>
+                                        <span class="goal-tag">Sustainable</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 4 -->
+                        <div class="slide">
+                            <div class="transformation-card">
+                                <div class="client-header">
+                                    <div class="client-info">
+                                        <h3>Fatima Ali</h3>
+                                        <p class="client-age">26 years old</p>
+                                        <div class="client-stats">
+                                            <span class="stat">-8 kg</span>
+                                            <span class="stat">14 weeks</span>
+                                        </div>
+                                    </div>
+                                    <div class="achievement-badge">
+                                        <i class="fas fa-bolt"></i>
+                                        <span>Energy</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="before-after-slider">
+                                    <div class="comparison-container">
+                                        <div class="image-comparison">
+                                            <img src="https://picsum.photos/seed/fatima-before/400/500.jpg" alt="Before Fatima" class="before-img">
+                                            <div class="image-overlay before-overlay">
+                                                <span class="overlay-label">Before</span>
+                                                <span class="weight">68 kg</span>
+                                            </div>
+                                        </div>
+                                        <div class="arrow-separator">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </div>
+                                        <div class="image-comparison">
+                                            <img src="https://picsum.photos/seed/fatima-after/400/500.jpg" alt="After Fatima" class="after-img">
+                                            <div class="image-overlay after-overlay">
+                                                <span class="overlay-label">After</span>
+                                                <span class="weight">60 kg</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="client-testimonial">
+                                    <p>"I wanted to feel more energetic and confident. Zaied's holistic approach not only helped me lose weight but completely changed my relationship with food and exercise!"</p>
+                                    <div class="client-goals">
+                                        <span class="goal-tag">Energy Boost</span>
+                                        <span class="goal-tag">Nutrition</span>
+                                        <span class="goal-tag">Lifestyle</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 5 -->
+                        <div class="slide">
+                            <div class="transformation-card">
+                                <div class="client-header">
+                                    <div class="client-info">
+                                        <h3>Omar Hassan</h3>
+                                        <p class="client-age">29 years old</p>
+                                        <div class="client-stats">
+                                            <span class="stat">-22 kg</span>
+                                            <span class="stat">24 weeks</span>
+                                        </div>
+                                    </div>
+                                    <div class="achievement-badge">
+                                        <i class="fas fa-crown"></i>
+                                        <span>Elite</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="before-after-slider">
+                                    <div class="comparison-container">
+                                        <div class="image-comparison">
+                                            <img src="https://picsum.photos/seed/omar-before/400/500.jpg" alt="Before Omar" class="before-img">
+                                            <div class="image-overlay before-overlay">
+                                                <span class="overlay-label">Before</span>
+                                                <span class="weight">120 kg</span>
+                                            </div>
+                                        </div>
+                                        <div class="arrow-separator">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </div>
+                                        <div class="image-comparison">
+                                            <img src="https://picsum.photos/seed/omar-after/400/500.jpg" alt="After Omar" class="after-img">
+                                            <div class="image-overlay after-overlay">
+                                                <span class="overlay-label">After</span>
+                                                <span class="weight">98 kg</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="client-testimonial">
+                                    <p>"From 120kg to 98kg in 6 months! Zaied's accountability and expertise kept me motivated. This isn't just a diet, it's a complete lifestyle transformation!"</p>
+                                    <div class="client-goals">
+                                        <span class="goal-tag">Major Loss</span>
+                                        <span class="goal-tag">Accountability</span>
+                                        <span class="goal-tag">Long-term</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="slider-btn next-btn" id="nextBtn" aria-label="Next slide">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <div class="slider-dots" id="sliderDots"></div>
+            </div>
+            
+            <div class="transformation-stats reveal">
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-bullseye"></i>
+                    <span class="stat-number">95%</span>
+                    <span class="stat-label">Success Rate</span>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-chart-line"></i>
+                    <span class="stat-number">15kg</span>
+                    <span class="stat-label">Avg. Weight Loss</span>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-calendar"></i>
+                    <span class="stat-number">16wks</span>
+                    <span class="stat-label">Avg. Duration</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Table Section -->
+    <section id="results" class="results">
+        <div class="container">
+            <h2 class="section-title reveal">Client Progress Metrics</h2>
+            <div class="table-container reveal">
+                <table class="results-table">
+                    <thead>
+                        <tr>
+                            <th>Client Name</th>
+                            <th>Start Weight (kg)</th>
+                            <th>Current Weight (kg)</th>
+                            <th>Weight Loss (kg)</th>
+                            <th>Body Fat %</th>
+                            <th>Duration</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ahmed Mohamed</td>
+                            <td>95</td>
+                            <td>78</td>
+                            <td class="positive">-17</td>
+                            <td>18%</td>
+                            <td>12 weeks</td>
+                            <td><span class="status-badge success">Achieved</span></td>
+                        </tr>
+                        <tr>
+                            <td>Sarah Khalid</td>
+                            <td>72</td>
+                            <td>62</td>
+                            <td class="positive">-10</td>
+                            <td>22%</td>
+                            <td>16 weeks</td>
+                            <td><span class="status-badge success">Achieved</span></td>
+                        </tr>
+                        <tr>
+                            <td>Mohamed Rami</td>
+                            <td>110</td>
+                            <td>92</td>
+                            <td class="positive">-18</td>
+                            <td>20%</td>
+                            <td>20 weeks</td>
+                            <td><span class="status-badge success">Achieved</span></td>
+                        </tr>
+                        <tr>
+                            <td>Fatima Ali</td>
+                            <td>68</td>
+                            <td>65</td>
+                            <td class="positive">-3</td>
+                            <td>25%</td>
+                            <td>8 weeks</td>
+                            <td><span class="status-badge progress">In Progress</span></td>
+                        </tr>
+                        <tr>
+                            <td>Omar Hassan</td>
+                            <td>85</td>
+                            <td>85</td>
+                            <td class="neutral">0</td>
+                            <td>15%</td>
+                            <td>4 weeks</td>
+                            <td><span class="status-badge progress">In Progress</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title reveal">Get In Touch</h2>
+            <p class="contact-subtitle reveal">Ready to start your fitness journey? Contact me today!</p>
+            
+            <div class="contact-content">
+                <div class="contact-left reveal">
+                    <div class="contact-info">
+                        <h3>Direct Contact</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div class="contact-details">
+                                <span class="contact-label">Phone</span>
+                                <span class="contact-value">+20 123 456 7890</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-details">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">mohamed@zaiedfitness.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="contact-details">
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">Cairo, Egypt</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div class="contact-details">
+                                <span class="contact-label">Hours</span>
+                                <span class="contact-value">Mon-Sat: 6AM-9PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-right reveal">
+                    <div class="contact-form">
+                        <h3>Send Message</h3>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" placeholder="Your Phone">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Tell me about your fitness goals..." rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="social-section reveal">
+                <h3>Follow Me</h3>
+                <p class="social-subtitle">Stay connected for fitness tips and motivation</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon" title="Facebook">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon" title="Instagram">
+                        <i class="fas fa-camera"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener" class="social-icon" title="Twitter">
+                        <i class="fas fa-comment"></i>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener" class="social-icon" title="YouTube">
+                        <i class="fas fa-play-circle"></i>
+                    </a>
+                    <a href="https://tiktok.com" target="_blank" rel="noopener" class="social-icon" title="TikTok">
+                        <i class="fas fa-music"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon" title="LinkedIn">
+                        <i class="fas fa-briefcase"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="cta-section reveal">
+                <div class="cta-content">
+                    <h3>Ready to Transform Your Life?</h3>
+                    <p>Join hundreds of satisfied clients who have achieved their fitness goals</p>
+                    <div class="cta-buttons">
+                        <a href="https://wa.me/201234567890" target="_blank" rel="noopener" class="cta-button whatsapp-btn">
+                            <i class="fas fa-comment"></i>
+                            Chat on WhatsApp
+                        </a>
+                        <a href="tel:+201234567890" class="cta-button phone-btn">
+                            <i class="fas fa-phone"></i>
+                            Call Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp CTA Button -->
+    <a href="https://wa.me/201234567890" target="_blank" rel="noopener" class="whatsapp-float" id="whatsapp-float" title="Chat with Mohamed on WhatsApp">
+        <i class="fas fa-comment"></i>
+    </a>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
