@@ -874,4 +874,4 @@ document.addEventListener('DOMContentLoaded', () => {
 // ============================================
 
 console.log('%c كوتش محمد زايد - موقع رسمي ', 'background: #39FF14; color: #1A1A1A; font-size: 20px; font-weight: bold; padding: 10px;');
-console.log('%c تم تطوير الموقع بواسطة Cascade AI ', 'background: #2A2A2A; color: #39FF14; font-size: 14px; padding: 5px;');
+console.log('%c تم تطوير الموقع بواسطة AhmedBsher ', 'background: #2A2A2A; color: #39FF14; font-size: 14px; padding: 5px;');
