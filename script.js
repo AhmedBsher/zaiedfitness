@@ -225,15 +225,15 @@ faqItems.forEach(item => {
 if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        
+
         // Get form data
         const formData = new FormData(contactForm);
         const data = Object.fromEntries(formData);
-        
+
         // Validate form
         let isValid = true;
         const requiredFields = ['name', 'email', 'phone', 'goal'];
-        
+
         requiredFields.forEach(field => {
             const input = contactForm.querySelector(`[name="${field}"]`);
             if (!input.value.trim()) {
@@ -243,28 +243,48 @@ if (contactForm) {
                 input.style.borderColor = '#333333';
             }
         });
-        
+
         if (isValid) {
-            // Simulate form submission
             const submitBtn = contactForm.querySelector('button[type="submit"]');
             const originalText = submitBtn.textContent;
-            
+
             submitBtn.textContent = 'جاري الإرسال...';
             submitBtn.disabled = true;
-            
-            setTimeout(() => {
-                submitBtn.textContent = 'تم الإرسال بنجاح!';
-                submitBtn.style.backgroundColor = '#00FF7F';
-                
+
+            // Send to Formspree
+            fetch('https://formspree.io/f/xbdbqjby', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => {
+                if (response.ok) {
+                    submitBtn.textContent = 'تم الإرسال بنجاح!';
+                    submitBtn.style.backgroundColor = '#00FF7F';
+
+                    setTimeout(() => {
+                        submitBtn.textContent = originalText;
+                        submitBtn.style.backgroundColor = '';
+                        submitBtn.disabled = false;
+                        contactForm.reset();
+                    }, 2000);
+                } else {
+                    throw new Error('Failed to submit form');
+                }
+            })
+            .catch(error => {
+                console.error('Form submission error:', error);
+                submitBtn.textContent = 'حدث خطأ، يرجى المحاولة مجددا';
+                submitBtn.style.backgroundColor = '#ff4444';
+
                 setTimeout(() => {
                     submitBtn.textContent = originalText;
                     submitBtn.style.backgroundColor = '';
                     submitBtn.disabled = false;
-                    contactForm.reset();
                 }, 2000);
-            }, 1500);
-            
-            console.log('Form submitted:', data);
+            });
         }
     });
 }
