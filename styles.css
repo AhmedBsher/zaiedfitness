@@ -326,6 +326,7 @@ img {
     font-size: 1.5rem;
     font-weight: 800;
     color: var(--accent-color);
+    cursor: default;
 }
 
 .logo-text span {
@@ -1894,6 +1895,24 @@ img {
 
 .copyright {
     color: var(--text-gray);
+}
+
+.developer-credit {
+    color: var(--text-gray);
+    font-size: 0.9rem;
+}
+
+.developer-credit a {
+    color: var(--accent-color);
+    font-weight: 600;
+    transition: var(--transition-normal);
+}
+
+.developer-credit a:hover {
+    color: var(--accent-hover);
+    transform: scale(1.2);
+    transition: 0.2s ease;
+    text-decoration: underline;
 }
 
 .legal-links {
