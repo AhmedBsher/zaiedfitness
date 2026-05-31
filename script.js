@@ -120,7 +120,8 @@ const animateCounter = (element, target) => {
 };
 
 const observerOptions = {
-    threshold: 0.5
+    threshold: 0.3,
+    rootMargin: '0px 0px -100px 0px'
 };
 
 const statsObserver = new IntersectionObserver((entries) => {
@@ -139,6 +140,16 @@ const statsSection = document.getElementById('stats');
 if (statsSection) {
     statsObserver.observe(statsSection);
 }
+
+// Fallback: Trigger stats animation if observer fails after 3 seconds
+setTimeout(() => {
+    statNumbers.forEach(stat => {
+        if (stat.textContent === '0') {
+            const target = parseInt(stat.getAttribute('data-target'));
+            animateCounter(stat, target);
+        }
+    });
+}, 3000);
 
 // ============================================
 // TRANSFORMATION SLIDER
