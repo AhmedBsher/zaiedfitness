@@ -286,6 +286,27 @@ img {
     transform: scale(1.05);
 }
 
+.btn-whatsapp {
+    background-color: #25D366;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-xs);
+    text-decoration: none;
+    margin-top: 4px;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128C7E;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(37, 211, 102, 0.4);
+}
+
+.btn-whatsapp i {
+    font-size: 1.2rem;
+}
+
 .btn-outline {
     background-color: transparent;
     border-color: var(--accent-color);
