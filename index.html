@@ -3,8 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="حقق أهدافك اللياقة البدنية مع كوتش محمد زايد. تدريب شخصي علمي، خطط غذائية مخصصة، وبرامج أونلاين ووجهاً لوجه.">
-    <meta name="keywords" content="مدرب شخصي، تدريب لياقة، خطة غذائية، كوتش، لياقة بدنية">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="حقق أهدافك اللياقة البدنية مع كوتش محمد زايد. تدريب شخصي علمي، خطط غذائية مخصصة، وبرامج أونلاين ووجهاً لوجه. أكثر من 9 سنوات خبرة و15 شهادة دولية.">
+    <meta name="keywords" content="مدرب شخصي، تدريب لياقة، خطة غذائية، كوتش، لياقة بدنية، خسارة الوزن، بناء العضلات، التدريب الأونلاين، الرياض، السعودية">
+    <meta name="author" content="كوتش محمد زايد">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://yourwebsite.com">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="كوتش محمد زايد | مدرب شخصي احترافي للتدريب واللياقة">
+    <meta property="og:description" content="حقق أهدافك اللياقة البدنية مع كوتش محمد زايد. تدريب شخصي علمي، خطط غذائية مخصصة، وبرامج أونلاين ووجهاً لوجه.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:image" content="https://yourwebsite.com/assets/coach-photo.jpg">
+    <meta property="og:locale" content="ar_AR">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="كوتش محمد زايد | مدرب شخصي احترافي للتدريب واللياقة">
+    <meta name="twitter:description" content="حقق أهدافك اللياقة البدنية مع كوتش محمد زايد. تدريب شخصي علمي، خطط غذائية مخصصة، وبرامج أونلاين ووجهاً لوجه.">
+    <meta name="twitter:image" content="https://yourwebsite.com/assets/coach-photo.jpg">
+    
     <title>كوتش محمد زايد | مدرب شخصي احترافي للتدريب واللياقة</title>
     
     <!-- Google Fonts - Cairo for Arabic -->
@@ -17,6 +37,57 @@
     
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/icon.png">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "محمد زايد",
+        "jobTitle": "مدرب شخصي احترافي",
+        "description": "مدرب شخصي محترف مع أكثر من 9 سنة خبرة و15 شهادة دولية في التدريب واللياقة البدنية",
+        "url": "https://zaiedfitness.vercel.app",
+        "image": "https://zaiedfitness.vercel.app/assets/coach-photo.jpg",
+        "telephone": "+201016929770",
+        "email": "mozaied801@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "الرياض",
+            "addressCountry": "SA"
+        },
+        "sameAs": [
+            "https://www.instagram.com/mohamed.zaied.9",
+            "https://www.facebook.com/mohamed.zaied.9484",
+            "https://www.tiktok.com/@hamozaied",
+            "https://snapchat.com/t/H1EIYS33"
+        ],
+        "knowsAbout": ["التدريب الشخصي", "لياقة بدنية", "خطة غذائية", "بناء العضلات", "خسارة الوزن"]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "كوتش محمد زايد",
+        "description": "خدمات تدريب شخصي احترافي أونلاين ووجهاً لوجه",
+        "url": "https://zaiedfitness.vercel.app",
+        "telephone": "+201016929770",
+        "email": "mozaied801@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "الرياض",
+            "addressCountry": "SA"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "24.7136",
+            "longitude": "46.6753"
+        },
+        "openingHours": "Mo-Su 00:00-23:59",
+        "priceRange": "$$"
+    }
+    </script>
 
 </head>
 <body>
@@ -34,7 +105,7 @@
     </div>
 
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar" id="navbar" role="navigation" aria-label="القائمة الرئيسية">
         <div class="container">
             <div class="nav-content">
                 <div class="logo">
@@ -63,7 +134,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero">
+    <section id="hero" class="hero" role="banner">
         <div class="hero-overlay"></div>
         <div class="hero-background">
             <video autoplay muted loop playsinline class="hero-video">
@@ -336,11 +407,11 @@
                                 <div class="before-after-wrapper">
                                     <div class="before-image">
                                         <span class="label">قبل</span>
-                                        <img src="assets/transformation1-before.jpg" alt="قبل التحول">
+                                        <img src="assets/transformation1-before.jpg" alt="تحول عميل قبل التدريب مع كوتش محمد زايد">
                                     </div>
                                     <div class="after-image">
                                         <span class="label">بعد</span>
-                                        <img src="assets/transformation1-after.jpg" alt="بعد التحول">
+                                        <img src="assets/transformation1-after.jpg" alt="تحول عميل بعد التدريب مع كوتش محمد زايد">
                                     </div>
                                 </div>
                             </div>
@@ -371,11 +442,11 @@
                                 <div class="before-after-wrapper">
                                     <div class="before-image">
                                         <span class="label">قبل</span>
-                                        <img src="assets/transformation2-before.jpg" alt="قبل التحول">
+                                        <img src="assets/transformation2-before.jpg" alt="تحول عميل قبل التدريب مع كوتش محمد زايد">
                                     </div>
                                     <div class="after-image">
                                         <span class="label">بعد</span>
-                                        <img src="assets/transformation2-after.jpg" alt="بعد التحول">
+                                        <img src="assets/transformation2-after.jpg" alt="تحول عميل بعد التدريب مع كوتش محمد زايد">
                                     </div>
                                 </div>
                             </div>
@@ -406,11 +477,11 @@
                                 <div class="before-after-wrapper">
                                     <div class="before-image">
                                         <span class="label">قبل</span>
-                                        <img src="assets/transformation3-before.jpg" alt="قبل التحول">
+                                        <img src="assets/transformation3-before.jpg" alt="تحول عميل قبل التدريب مع كوتش محمد زايد">
                                     </div>
                                     <div class="after-image">
                                         <span class="label">بعد</span>
-                                        <img src="assets/transformation3-after.jpg" alt="بعد التحول">
+                                        <img src="assets/transformation3-after.jpg" alt="تحول عميل بعد التدريب مع كوتش محمد زايد">
                                     </div>
                                 </div>
                             </div>
@@ -441,11 +512,11 @@
                                 <div class="before-after-wrapper">
                                     <div class="before-image">
                                         <span class="label">قبل</span>
-                                        <img src="assets/transformation4-before.jpg" alt="قبل التحول">
+                                        <img src="assets/transformation4-before.jpg" alt="تحول عميل قبل التدريب مع كوتش محمد زايد">
                                     </div>
                                     <div class="after-image">
                                         <span class="label">بعد</span>
-                                        <img src="assets/transformation4-after.jpg" alt="بعد التحول">
+                                        <img src="assets/transformation4-after.jpg" alt="تحول عميل بعد التدريب مع كوتش محمد زايد">
                                     </div>
                                 </div>
                             </div>
@@ -476,11 +547,11 @@
                                 <div class="before-after-wrapper">
                                     <div class="before-image">
                                         <span class="label">قبل</span>
-                                        <img src="assets/transformation5-before.jpg" alt="قبل التحول">
+                                        <img src="assets/transformation5-before.jpg" alt="تحول عميل قبل التدريب مع كوتش محمد زايد">
                                     </div>
                                     <div class="after-image">
                                         <span class="label">بعد</span>
-                                        <img src="assets/transformation5-after.jpg" alt="بعد التحول">
+                                        <img src="assets/transformation5-after.jpg" alt="تحول عميل بعد التدريب مع كوتش محمد زايد">
                                     </div>
                                 </div>
                             </div>
@@ -511,11 +582,11 @@
                                 <div class="before-after-wrapper">
                                     <div class="before-image">
                                         <span class="label">قبل</span>
-                                        <img src="assets/transformation6-before.jpg" alt="قبل التحول">
+                                        <img src="assets/transformation6-before.jpg" alt="تحول عميل قبل التدريب مع كوتش محمد زايد">
                                     </div>
                                     <div class="after-image">
                                         <span class="label">بعد</span>
-                                        <img src="assets/transformation6-after.jpg" alt="بعد التحول">
+                                        <img src="assets/transformation6-after.jpg" alt="تحول عميل بعد التدريب مع كوتش محمد زايد">
                                     </div>
                                 </div>
                             </div>
@@ -524,6 +595,181 @@
                                 <div class="transformation-metrics">
                                     <div class="metric">
                                         <span class="metric-value">-9kg</span>
+                                        <span class="metric-label">وزن</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">12</span>
+                                        <span class="metric-label">أسبوع</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">100%</span>
+                                        <span class="metric-label">طاقة</span>
+                                    </div>
+                                </div>
+                                <p class="client-quote"></p>
+                                <span class="program-tag">نظام تدريب 3 اشهر</span>
+                            </div>
+                        </div>
+
+                        <!-- Transformation 7 -->
+                        <div class="transformation-card">
+                            <div class="transformation-images">
+                                <div class="before-after-wrapper">
+                                    <div class="before-image">
+                                        <span class="label">قبل</span>
+                                        <img src="assets/transformation7-before.jpg" alt="قبل التحول">
+                                    </div>
+                                    <div class="after-image">
+                                        <span class="label">بعد</span>
+                                        <img src="assets/transformation7-after.jpg" alt="بعد التحول">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="transformation-info">
+                                <h3 class="client-name">علي</h3>
+                                <div class="transformation-metrics">
+                                    <div class="metric">
+                                        <span class="metric-value">-6kg</span>
+                                        <span class="metric-label">وزن</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">12</span>
+                                        <span class="metric-label">أسبوع</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">100%</span>
+                                        <span class="metric-label">طاقة</span>
+                                    </div>
+                                </div>
+                                <p class="client-quote"></p>
+                                <span class="program-tag">نظام تدريب 3 اشهر</span>
+                            </div>
+                        </div>
+
+                        <!-- Transformation 8 -->
+                        <div class="transformation-card">
+                            <div class="transformation-images">
+                                <div class="before-after-wrapper">
+                                    <div class="before-image">
+                                        <span class="label">قبل</span>
+                                        <img src="assets/transformation8-before.jpg" alt="قبل التحول">
+                                    </div>
+                                    <div class="after-image">
+                                        <span class="label">بعد</span>
+                                        <img src="assets/transformation8-after.jpg" alt="بعد التحول">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="transformation-info">
+                                <h3 class="client-name">محمد</h3>
+                                <div class="transformation-metrics">
+                                    <div class="metric">
+                                        <span class="metric-value">-10kg</span>
+                                        <span class="metric-label">وزن</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">12</span>
+                                        <span class="metric-label">أسبوع</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">100%</span>
+                                        <span class="metric-label">طاقة</span>
+                                    </div>
+                                </div>
+                                <p class="client-quote"></p>
+                                <span class="program-tag">نظام تدريب 3 اشهر</span>
+                            </div>
+                        </div>
+
+                        <!-- Transformation 9 -->
+                        <div class="transformation-card">
+                            <div class="transformation-images">
+                                <div class="before-after-wrapper">
+                                    <div class="before-image">
+                                        <span class="label">قبل</span>
+                                        <img src="assets/transformation9-before.jpg" alt="قبل التحول">
+                                    </div>
+                                    <div class="after-image">
+                                        <span class="label">بعد</span>
+                                        <img src="assets/transformation9-after.jpg" alt="بعد التحول">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="transformation-info">
+                                <h3 class="client-name">يونس</h3>
+                                <div class="transformation-metrics">
+                                    <div class="metric">
+                                        <span class="metric-value">-12kg</span>
+                                        <span class="metric-label">وزن</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">12</span>
+                                        <span class="metric-label">أسبوع</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">100%</span>
+                                        <span class="metric-label">طاقة</span>
+                                    </div>
+                                </div>
+                                <p class="client-quote"></p>
+                                <span class="program-tag">نظام تدريب 3 اشهر</span>
+                            </div>
+                        </div>
+
+                        <!-- Transformation 10 -->
+                        <div class="transformation-card">
+                            <div class="transformation-images">
+                                <div class="before-after-wrapper">
+                                    <div class="before-image">
+                                        <span class="label">قبل</span>
+                                        <img src="assets/transformation10-before.jpg" alt="قبل التحول">
+                                    </div>
+                                    <div class="after-image">
+                                        <span class="label">بعد</span>
+                                        <img src="assets/transformation10-after.jpg" alt="بعد التحول">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="transformation-info">
+                                <h3 class="client-name">فارس</h3>
+                                <div class="transformation-metrics">
+                                    <div class="metric">
+                                        <span class="metric-value">-10kg</span>
+                                        <span class="metric-label">وزن</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">12</span>
+                                        <span class="metric-label">أسبوع</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">100%</span>
+                                        <span class="metric-label">طاقة</span>
+                                    </div>
+                                </div>
+                                <p class="client-quote"></p>
+                                <span class="program-tag">نظام تدريب 3 اشهر</span>
+                            </div>
+                        </div>
+
+                        <!-- Transformation 11 -->
+                        <div class="transformation-card">
+                            <div class="transformation-images">
+                                <div class="before-after-wrapper">
+                                    <div class="before-image">
+                                        <span class="label">قبل</span>
+                                        <img src="assets/transformation11-before.jpg" alt="قبل التحول">
+                                    </div>
+                                    <div class="after-image">
+                                        <span class="label">بعد</span>
+                                        <img src="assets/transformation11-after.jpg" alt="بعد التحول">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="transformation-info">
+                                <h3 class="client-name">خالد</h3>
+                                <div class="transformation-metrics">
+                                    <div class="metric">
+                                        <span class="metric-value">-8kg</span>
                                         <span class="metric-label">وزن</span>
                                     </div>
                                     <div class="metric">
@@ -554,6 +800,11 @@
                     <span class="dot" data-index="3"></span>
                     <span class="dot" data-index="4"></span>
                     <span class="dot" data-index="5"></span>
+                    <span class="dot" data-index="6"></span>
+                    <span class="dot" data-index="7"></span>
+                    <span class="dot" data-index="8"></span>
+                    <span class="dot" data-index="9"></span>
+                    <span class="dot" data-index="10"></span>
                 </div>
             </div>
             
@@ -1037,7 +1288,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact reveal-left">
+    <section id="contact" class="contact reveal-left" role="region" aria-labelledby="contact-title">
         <div class="container">
             <div class="contact-content">
                 <div class="contact-info">
@@ -1135,7 +1386,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
